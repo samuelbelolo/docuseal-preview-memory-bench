@@ -1,0 +1,19 @@
+Puma starting in single mode...
+* Puma version: 8.0.2 ("Into the Arena")
+* Ruby version: ruby 4.0.5 (2026-05-20 revision 64336ffd0e) +PRISM [x86_64-linux-musl]
+*  Min threads: 15
+*  Max threads: 15
+*  Environment: production
+*          PID: 1
+* Listening on http://0.0.0.0:3000
+Use Ctrl-C to stop
+[1;34mINFO [0m 2026-10-11T08:53:18.666Z pid=1 tid=g6p: Sidekiq 8.1.6 connecting to Redis with options {size: 10, pool_name: "internal", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T08:53:18.696Z pid=1 tid=g75: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T08:53:18.696Z pid=1 tid=g7d: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T08:53:18.696Z pid=1 tid=g7l: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T08:53:18.696Z pid=1 tid=g7t: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T08:53:18.696Z pid=1 tid=g81: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+I, [2026-10-11T08:53:18.999594 #1]  INFO -- : [22a4880b-c3f3-4ae8-a47a-212e166c88e8] {"method":"GET","format":"*/*","controller":"Rails::HealthController","action":"show","status":200,"allocations":713,"duration":2.82,"view":0.7,"db":0.0,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":null,"aid":null,"rid":null,"raid":null}
+I, [2026-10-11T08:53:19.514346 #1]  INFO -- : [b2f00f23-79af-416c-99f6-9b799d7208ae] {"method":"GET","format":"*/*","controller":"TemplatesDashboardController","action":"index","status":200,"allocations":26100,"duration":343.49,"view":175.4,"db":17.34,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":null,"raid":null}
+I, [2026-10-11T08:53:19.515269 #1]  INFO -- : [b2f00f23-79af-416c-99f6-9b799d7208ae] {"method":"GET","format":"*/*","controller":"DashboardController","action":"index","status":200,"allocations":46559,"duration":494.65,"view":0.0,"db":0.0,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":null,"raid":null}
+I, [2026-10-11T08:53:43.662157 #1]  INFO -- : [a73b55d5-0653-403a-862f-bb84300fb9b8] {"method":"POST","format":"*/*","controller":"TemplatesUploadsController","action":"create","status":302,"allocations":52501,"duration":4045.79,"view":0.0,"db":114.76,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":1,"raid":1}

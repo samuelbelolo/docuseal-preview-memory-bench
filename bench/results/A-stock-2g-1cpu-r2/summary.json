@@ -1,0 +1,102 @@
+{
+  "label": "A-stock-2g-1cpu-r2",
+  "settings": "cpuset=0 memory=2g image=docuseal/docuseal:3.3.1 platform=linux/amd64 pdf=test-22-pages.pdf",
+  "rest_anon_mb": 179,
+  "rest_current_mb": 194,
+  "memory_peak_mb": 1200,
+  "max_anon_mb": 1161,
+  "final_anon_mb": 923,
+  "oom_kill_events": 0,
+  "oom_killed": false,
+  "exit_code": 0,
+  "uploads_ok": 7,
+  "uploads_sent": 7,
+  "sequential_seconds": [
+    3.9,
+    3.5,
+    3.4,
+    3.2,
+    3.1
+  ],
+  "sequential_mean_seconds": 3.4,
+  "parallel_wall_seconds": 5.9,
+  "previews_per_document": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "preview_signatures": [
+    "80031e7c3f507e79d023db54492c9dd7"
+  ],
+  "preview_order_ok": true,
+  "disk_md5_mismatches": 0,
+  "documents": [
+    {
+      "doc": 1,
+      "phase": "sequential",
+      "ok": true,
+      "seconds": 3.9,
+      "peak_current_mb": 673,
+      "peak_anon_mb": 655,
+      "end_anon_mb": 544
+    },
+    {
+      "doc": 2,
+      "phase": "sequential",
+      "ok": true,
+      "seconds": 3.5,
+      "peak_current_mb": 858,
+      "peak_anon_mb": 839,
+      "end_anon_mb": 557
+    },
+    {
+      "doc": 3,
+      "phase": "sequential",
+      "ok": true,
+      "seconds": 3.4,
+      "peak_current_mb": 870,
+      "peak_anon_mb": 847,
+      "end_anon_mb": 565
+    },
+    {
+      "doc": 4,
+      "phase": "sequential",
+      "ok": true,
+      "seconds": 3.2,
+      "peak_current_mb": 844,
+      "peak_anon_mb": 818,
+      "end_anon_mb": 571
+    },
+    {
+      "doc": 5,
+      "phase": "sequential",
+      "ok": true,
+      "seconds": 3.1,
+      "peak_current_mb": 751,
+      "peak_anon_mb": 721,
+      "end_anon_mb": 574
+    },
+    {
+      "doc": 6,
+      "phase": "parallel",
+      "ok": true,
+      "seconds": 5.9,
+      "peak_current_mb": 1198,
+      "peak_anon_mb": 1161,
+      "end_anon_mb": 923
+    },
+    {
+      "doc": 7,
+      "phase": "parallel",
+      "ok": true,
+      "seconds": 5.9,
+      "peak_current_mb": 1198,
+      "peak_anon_mb": 1161,
+      "end_anon_mb": 923
+    }
+  ]
+}

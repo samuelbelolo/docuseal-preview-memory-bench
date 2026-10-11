@@ -1,0 +1,23 @@
+Puma starting in single mode...
+* Puma version: 8.0.2 ("Into the Arena")
+* Ruby version: ruby 4.0.5 (2026-05-20 revision 64336ffd0e) +PRISM [x86_64-linux-musl]
+*  Min threads: 15
+*  Max threads: 15
+*  Environment: production
+*          PID: 1
+* Listening on http://0.0.0.0:3000
+Use Ctrl-C to stop
+[1;34mINFO [0m 2026-10-11T08:42:53.238Z pid=1 tid=g6p: Sidekiq 8.1.6 connecting to Redis with options {size: 10, pool_name: "internal", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T08:42:53.268Z pid=1 tid=g75: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T08:42:53.268Z pid=1 tid=g7d: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T08:42:53.268Z pid=1 tid=g7l: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T08:42:53.268Z pid=1 tid=g7t: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T08:42:53.269Z pid=1 tid=g81: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+I, [2026-10-11T08:42:53.493152 #1]  INFO -- : [f6b7224d-da7e-4d41-b3c1-b0271ffe0062] {"method":"GET","format":"*/*","controller":"Rails::HealthController","action":"show","status":200,"allocations":713,"duration":2.39,"view":0.88,"db":0.0,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":null,"aid":null,"rid":null,"raid":null}
+I, [2026-10-11T08:42:53.830191 #1]  INFO -- : [3c24a259-5d81-40e8-800f-13c4668d7ed3] {"method":"GET","format":"*/*","controller":"TemplatesDashboardController","action":"index","status":200,"allocations":26101,"duration":220.15,"view":116.17,"db":14.32,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":null,"raid":null}
+I, [2026-10-11T08:42:53.830868 #1]  INFO -- : [3c24a259-5d81-40e8-800f-13c4668d7ed3] {"method":"GET","format":"*/*","controller":"DashboardController","action":"index","status":200,"allocations":46561,"duration":317.41,"view":0.0,"db":0.0,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":null,"raid":null}
+I, [2026-10-11T08:43:18.052449 #1]  INFO -- : [3ee8cdfb-daeb-4927-bf50-e9a248f7a0c3] {"method":"POST","format":"*/*","controller":"TemplatesUploadsController","action":"create","status":302,"allocations":52692,"duration":4123.17,"view":0.0,"db":94.48,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":1,"raid":1}
+I, [2026-10-11T08:43:26.994358 #1]  INFO -- : [3018fe27-412c-45d2-9b3f-4a7120b2e468] {"method":"POST","format":"*/*","controller":"TemplatesUploadsController","action":"create","status":302,"allocations":34858,"duration":3791.04,"view":0.0,"db":19.38,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":2,"raid":1}
+I, [2026-10-11T08:43:35.679068 #1]  INFO -- : [46230570-83f1-4028-879a-08df9d95c922] {"method":"POST","format":"*/*","controller":"TemplatesUploadsController","action":"create","status":302,"allocations":34940,"duration":3440.73,"view":0.0,"db":12.63,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":3,"raid":1}
+I, [2026-10-11T08:43:44.194290 #1]  INFO -- : [5f75a5fe-4af6-49ac-9fb6-5120a5102cb2] {"method":"POST","format":"*/*","controller":"TemplatesUploadsController","action":"create","status":302,"allocations":34726,"duration":3427.51,"view":0.0,"db":9.39,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":4,"raid":1}
+I, [2026-10-11T08:43:52.358398 #1]  INFO -- : [59e654bf-2e33-4dd1-a8ea-2529a1614b9e] {"method":"POST","format":"*/*","controller":"TemplatesUploadsController","action":"create","status":302,"allocations":34439,"duration":3069.96,"view":0.0,"db":7.81,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":5,"raid":1}

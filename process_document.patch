@@ -1,0 +1,71 @@
+diff --git a/lib/templates/process_document.rb b/lib/templates/process_document.rb
+index e8f138f..dcc5f67 100644
+--- a/lib/templates/process_document.rb
++++ b/lib/templates/process_document.rb
+@@ -8,7 +8,6 @@ module Templates
+     ATTACHMENT_NAME = 'preview_images'
+ 
+     PDF_CONTENT_TYPE = 'application/pdf'
+-    CONCURRENCY = 2
+     Q = 95
+     JPEG_Q = ENV.fetch('PAGE_QUALITY', '35').to_i
+     MAX_WIDTH = 1400
+@@ -85,28 +84,17 @@ module Templates
+       generate_document_preview_images(attachment, 0..[number_of_pages - 1, max_pages_to_process].min, doc:)
+     end
+ 
+-    def generate_document_preview_images(attachment, range, doc:, concurrency: CONCURRENCY)
++    def generate_document_preview_images(attachment, range, doc:)
+       flatten_pages = doc.form?
+ 
+-      pool = Concurrent::FixedThreadPool.new(concurrency)
+-
+-      promises =
++      blobs =
+         range.map do |page_number|
+-          doc_page = doc.get_page(page_number)
+-
+-          hide_placeholder_widgets(doc_page, hide_empty: !flatten_pages)
+-          doc_page.flatten if flatten_pages
+-
+-          bytes, width, height = doc_page.render_to_bitmap(width: MAX_WIDTH)
+-
+-          image = Vips::Image.new_from_memory_copy(bytes, width, height, 4, :uchar)
++          image = render_page_image(doc, page_number, flatten_pages:)
+ 
+-          Concurrent::Promise.execute(executor: pool) { build_and_upload_blob(image, page_number) }
+-        ensure
+-          doc_page&.close
++          build_and_upload_blob(image, page_number)
+         end
+ 
+-      Concurrent::Promise.zip(*promises).value!.each do |blob|
++      blobs.each do |blob|
+         next unless blob
+ 
+         ApplicationRecord.no_touching do
+@@ -117,8 +105,23 @@ module Templates
+           )
+         end
+       end
++    end
++
++    def render_page_image(doc, page_number, flatten_pages: false)
++      doc_page = doc.get_page(page_number)
++
++      hide_placeholder_widgets(doc_page, hide_empty: !flatten_pages)
++      doc_page.flatten if flatten_pages
++
++      bytes, width, height = doc_page.render_to_bitmap(width: MAX_WIDTH)
++
++      image = Vips::Image.new_from_memory_copy(bytes, width, height, 4, :uchar)
++
++      bytes.clear
++
++      image
+     ensure
+-      pool&.kill
++      doc_page&.close
+     end
+ 
+     def hide_placeholder_widgets(page, hide_empty: true)

@@ -1,0 +1,47 @@
+{
+  "label": "A-stock-2cpu-r1",
+  "settings": "cpuset=0,1 memory=740m image=docuseal/docuseal:3.3.1 platform=linux/amd64 pdf=test-22-pages.pdf",
+  "rest_anon_mb": 180,
+  "rest_current_mb": 194,
+  "memory_peak_mb": 675,
+  "max_anon_mb": 655,
+  "final_anon_mb": 629,
+  "oom_kill_events": 0,
+  "oom_killed": true,
+  "exit_code": 137,
+  "uploads_ok": 1,
+  "uploads_sent": 2,
+  "sequential_seconds": [
+    3.0
+  ],
+  "sequential_mean_seconds": 3.0,
+  "parallel_wall_seconds": null,
+  "previews_per_document": [
+    16
+  ],
+  "preview_signatures": [
+    "80031e7c3f507e79d023db54492c9dd7"
+  ],
+  "preview_order_ok": true,
+  "disk_md5_mismatches": 0,
+  "documents": [
+    {
+      "doc": 1,
+      "phase": "sequential",
+      "ok": true,
+      "seconds": 3.0,
+      "peak_current_mb": 672,
+      "peak_anon_mb": 655,
+      "end_anon_mb": 546
+    },
+    {
+      "doc": 2,
+      "phase": "sequential",
+      "ok": false,
+      "seconds": 0.7,
+      "peak_current_mb": 648,
+      "peak_anon_mb": 629,
+      "end_anon_mb": 629
+    }
+  ]
+}

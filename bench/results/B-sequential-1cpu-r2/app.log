@@ -1,0 +1,31 @@
+Puma starting in single mode...
+* Puma version: 8.0.2 ("Into the Arena")
+* Ruby version: ruby 4.0.5 (2026-05-20 revision 64336ffd0e) +PRISM [x86_64-linux-musl]
+*  Min threads: 15
+*  Max threads: 15
+*  Environment: production
+*          PID: 1
+* Listening on http://0.0.0.0:3000
+Use Ctrl-C to stop
+[1;34mINFO [0m 2026-10-11T09:17:04.198Z pid=1 tid=g6p: Sidekiq 8.1.6 connecting to Redis with options {size: 10, pool_name: "internal", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T09:17:04.225Z pid=1 tid=g75: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T09:17:04.225Z pid=1 tid=g7d: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T09:17:04.225Z pid=1 tid=g7l: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T09:17:04.225Z pid=1 tid=g7t: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+[1;34mINFO [0m 2026-10-11T09:17:04.225Z pid=1 tid=g81: Sidekiq 8.1.6 connecting to Redis with options {size: 5, pool_name: "default", url: "redis://default:REDACTED@127.0.0.1:16379/0"}
+I, [2026-10-11T09:17:04.978995 #1]  INFO -- : [5c76954f-c438-4227-8037-5a71ce2a9bc5] {"method":"GET","format":"*/*","controller":"Rails::HealthController","action":"show","status":200,"allocations":713,"duration":2.97,"view":1.2,"db":0.0,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":null,"aid":null,"rid":null,"raid":null}
+I, [2026-10-11T09:17:05.419917 #1]  INFO -- : [07dc5358-2c0e-472b-b09b-576f05adc1f0] {"method":"GET","format":"*/*","controller":"TemplatesDashboardController","action":"index","status":200,"allocations":26106,"duration":328.85,"view":174.02,"db":15.68,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":null,"raid":null}
+I, [2026-10-11T09:17:05.420861 #1]  INFO -- : [07dc5358-2c0e-472b-b09b-576f05adc1f0] {"method":"GET","format":"*/*","controller":"DashboardController","action":"index","status":200,"allocations":46567,"duration":413.0,"view":0.0,"db":0.0,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":null,"raid":null}
+I, [2026-10-11T09:17:29.332879 #1]  INFO -- : [618396e2-aab6-4812-8066-c3a281f695ed] {"method":"POST","format":"*/*","controller":"TemplatesUploadsController","action":"create","status":302,"allocations":47108,"duration":3814.77,"view":0.0,"db":109.46,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":1,"raid":1}
+I, [2026-10-11T09:17:37.984396 #1]  INFO -- : [524b0279-b01b-46df-a662-895fadc82abc] {"method":"POST","format":"*/*","controller":"TemplatesUploadsController","action":"create","status":302,"allocations":29079,"duration":3471.71,"view":0.0,"db":14.69,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":2,"raid":1}
+I, [2026-10-11T09:17:46.250733 #1]  INFO -- : [d62441d2-0d7d-44e6-b1fa-0123e274afbb] {"method":"POST","format":"*/*","controller":"TemplatesUploadsController","action":"create","status":302,"allocations":29399,"duration":3025.06,"view":0.0,"db":7.21,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":3,"raid":1}
+I, [2026-10-11T09:17:54.426706 #1]  INFO -- : [294e65e1-8361-449e-8d56-952e0fb54255] {"method":"POST","format":"*/*","controller":"TemplatesUploadsController","action":"create","status":302,"allocations":29124,"duration":3066.12,"view":0.0,"db":6.14,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":4,"raid":1}
+I, [2026-10-11T09:18:02.597843 #1]  INFO -- : [3e8b6deb-ae37-4344-ade5-eb067f09e0ba] {"method":"POST","format":"*/*","controller":"TemplatesUploadsController","action":"create","status":302,"allocations":29113,"duration":3072.18,"view":0.0,"db":8.27,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":5,"raid":1}
+I, [2026-10-11T09:18:18.541531 #1]  INFO -- : [124895a2-77b3-47ba-865f-b5cf288ce561] {"method":"POST","format":"*/*","controller":"TemplatesUploadsController","action":"create","status":302,"allocations":46304,"duration":5771.35,"view":0.0,"db":13.62,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":7,"raid":1}
+I, [2026-10-11T09:18:18.586678 #1]  INFO -- : [b806fe27-9ebe-4689-af5f-a17bfea4f959] {"method":"POST","format":"*/*","controller":"TemplatesUploadsController","action":"create","status":302,"allocations":58562,"duration":5861.22,"view":0.0,"db":6.45,"host":"127.0.0.1","fwd":"172.17.0.1","params":{},"uid":1,"aid":1,"rid":6,"raid":1}
+[1;34mINFO [0m 2026-10-11T09:18:28.693Z pid=1 tid=136h: Terminating quiet threads for default capsule
+[1;34mINFO [0m 2026-10-11T09:18:28.698Z pid=1 tid=136p: Scheduler exiting...
+[1;34mINFO [0m 2026-10-11T09:18:29.219Z pid=1 tid=136x: Pausing to allow jobs to finish...
+31:signal-handler (1791710310) Received SIGINT scheduling shutdown...
+31:M 11 Oct 2026 09:18:30.872 # Redis is now ready to exit, bye bye...
+- Gracefully stopping, waiting for requests to finish

@@ -1,0 +1,8 @@
+doc	phase	start	end	http	redirect
+1	sequential	1791709526.440	1791709531.208	302	http://127.0.0.1:3999/templates/1/edit
+2	sequential	1791709536.254	1791709540.544	302	http://127.0.0.1:3999/templates/2/edit
+3	sequential	1791709545.586	1791709549.097	302	http://127.0.0.1:3999/templates/3/edit
+4	sequential	1791709554.138	1791709557.627	302	http://127.0.0.1:3999/templates/4/edit
+5	sequential	1791709562.678	1791709565.974	302	http://127.0.0.1:3999/templates/5/edit
+7	parallel	1791709576.020	1791709582.195	302	http://127.0.0.1:3999/templates/6/edit
+6	parallel	1791709576.020	1791709582.263	302	http://127.0.0.1:3999/templates/7/edit
